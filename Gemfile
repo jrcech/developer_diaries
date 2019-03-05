@@ -29,7 +29,6 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'slim-rails', '~> 3.2'
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'dotenv-rails', '~> 2.7', '>= 2.7.1'
   gem 'rspec-rails', '~> 3.8', '>= 3.8.2'
@@ -37,11 +36,11 @@ group :development, :test do
 end
 
 group :development do
-  # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'rubocop', '~> 0.65.0', require: false
   gem 'rubocop-rspec', '~> 1.32', require: false
+  gem 'magic_frozen_string_literal', '~> 1.0', '>= 1.0.3'
 end
 
 group :test do
