@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  scope :frontend_test do
+    root to: 'frontend_test#index', as: :frontend_test
+  end
 end
