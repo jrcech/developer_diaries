@@ -1,0 +1,7 @@
+require: rubocop-rspec
+Documentation:
+  Enabled: false
+Style/RegexpLiteral:
+  AllowInnerSlashes: true
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented_relative_to_receiver
