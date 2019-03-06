@@ -1,9 +1,12 @@
 import { Controller } from "stimulus";
 
 export default class extends Controller {
-  static targets = ["output"];
+  static targets = ["stimulusTest", "turbolinksTest"];
 
   connect() {
-    this.outputTarget.textContent = "Stimulus loaded";
+    this.stimulusTestTarget.textContent = "Stimulus loaded";
+    if (typeof Turbolinks !== "undefined") {
+      this.turbolinksTestTarget.textContent = "Turbolinks loaded";
+    }
   }
 }

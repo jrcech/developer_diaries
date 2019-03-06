@@ -12,4 +12,9 @@ RSpec.describe 'Frontend test', type: :system do
     visit frontend_test_path
     expect(page).to have_css 'p.css-test', visible: :hidden
   end
+
+  it 'ensures turbolinks are loaded', js: true do
+    visit frontend_test_path
+    expect(page).to have_text 'Turbolinks loaded'
+  end
 end
