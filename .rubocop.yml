@@ -5,3 +5,5 @@ Style/RegexpLiteral:
   AllowInnerSlashes: true
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented_relative_to_receiver
+Metrics/BlockLength:
+  ExcludedMethods: ['describe', 'context']
