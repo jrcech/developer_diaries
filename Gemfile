@@ -16,6 +16,7 @@ gem 'redis', '~> 4.1'
 gem 'webpacker', '~> 4.0', '>= 4.0.2'
 # endregion
 
+gem 'devise', '~> 4.6', '>= 4.6.1'
 gem 'slim-rails', '~> 3.2'
 
 group :development, :test do
