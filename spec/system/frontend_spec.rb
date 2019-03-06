@@ -3,23 +3,40 @@
 require 'rails_helper'
 
 RSpec.describe 'Frontend test', type: :system do
-  it 'ensures stimulus is loaded', js: true do
+  before do
     visit frontend_test_path
-    expect(page).to have_text 'Stimulus loaded'
   end
 
-  it 'ensures css are loaded', js: true do
-    visit frontend_test_path
+  describe 'javascript components' do
+    it 'ensures stimulus is loaded', js: true do
+      expect(page).to have_text 'Stimulus loaded'
+    end
+
+    it 'ensures jquery is loaded', js: true do
+      expect(page).to have_text 'jQuery loaded'
+    end
+
+    it 'ensures turbolinks are loaded', js: true do
+      expect(page).to have_text 'Turbolinks loaded'
+    end
+  end
+
+  it 'ensures styles are loaded', js: true do
     expect(page).to have_css 'p.css-test', visible: :hidden
   end
 
-  it 'ensures turbolinks are loaded', js: true do
-    visit frontend_test_path
-    expect(page).to have_text 'Turbolinks loaded'
+  it 'ensures font awesome is loaded', js: true do
+    expect(page).to have_css 'svg.fa-check', visible: :visible
   end
 
-  it 'ensures font awesome is loaded', js: true do
-    visit frontend_test_path
-    expect(page).to have_css 'svg.fa-check', visible: :visible
+  describe 'bootstrap components' do
+    it 'ensures styles are loaded', js: true do
+      expect(page).to have_css 'p.d-none', visible: :hidden
+    end
+
+    it 'ensures javascript is loaded', js: true do
+      find_button('Bootstrap?').hover
+      expect(page).to have_css 'div.tooltip'
+    end
   end
 end
