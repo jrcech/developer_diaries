@@ -48,6 +48,7 @@ group :test do
   gem 'selenium-webdriver', '~> 3.141'
   gem 'geckodriver-helper', '~> 0.23.0'
   gem 'shoulda-matchers', '~> 4.0', '>= 4.0.1'
+  gem 'simplecov', '~> 0.16.1', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
