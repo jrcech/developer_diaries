@@ -17,4 +17,9 @@ RSpec.describe 'Frontend test', type: :system do
     visit frontend_test_path
     expect(page).to have_text 'Turbolinks loaded'
   end
+
+  it 'ensures font awesome is loaded', js: true do
+    visit frontend_test_path
+    expect(page).to have_css 'svg.fa-check', visible: :visible
+  end
 end
