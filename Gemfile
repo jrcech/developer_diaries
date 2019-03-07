@@ -20,6 +20,7 @@ gem 'devise', '~> 4.6', '>= 4.6.1'
 gem 'slim-rails', '~> 3.2'
 
 group :development, :test do
+  gem 'awesome_print', '~> 1.8'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'dotenv-rails', '~> 2.7', '>= 2.7.1'
   gem 'factory_bot_rails', '~> 5.0', '>= 5.0.1'
@@ -27,8 +28,11 @@ group :development, :test do
 end
 
 group :development do
+  gem 'annotate', '~> 2.7', '>= 2.7.4'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'magic_frozen_string_literal', '~> 1.0', '>= 1.0.3'
+  gem 'pry-awesome_print', '~> 9.6', '>= 9.6.11'
+  gem 'pry-rails', '~> 0.3.9'
   gem 'rubocop', '~> 0.65.0', require: false
   gem 'rubocop-rspec', '~> 1.32', require: false
   gem 'web-console', '>= 3.3.0'
