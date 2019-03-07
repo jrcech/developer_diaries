@@ -7,5 +7,5 @@ Rails.application.routes.draw do
     root to: 'frontend_test#index', as: :frontend_test
   end
 
-  root to: 'home#index'
+  root to: 'frontend_test#index'
 end
