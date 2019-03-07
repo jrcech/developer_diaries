@@ -1,4 +1,7 @@
 require: rubocop-rspec
+AllCops:
+  Exclude:
+    - 'db/migrate/*'
 Documentation:
   Enabled: false
 Style/RegexpLiteral:
