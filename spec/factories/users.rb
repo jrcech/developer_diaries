@@ -2,8 +2,8 @@
 
 FactoryBot.define do
   factory :user do
-    email { 'MyString' }
-    encrypted_password { 'MyString' }
+    email { 'user@example.com' }
+    password { 'MyString' }
     reset_password_token { 'MyString' }
     reset_password_sent_at { '2019-03-08 15:33:28' }
     remember_created_at { '2019-03-08 15:33:28' }
