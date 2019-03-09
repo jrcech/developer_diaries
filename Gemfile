@@ -36,6 +36,7 @@ group :development do
   gem 'fasterer', '~> 0.4.2'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'magic_frozen_string_literal', '~> 1.0', '>= 1.0.3'
+  gem 'overcommit', '~> 0.46.0'
   gem 'pry-awesome_print', '~> 9.6', '>= 9.6.11'
   gem 'pry-rails', '~> 0.3.9'
   gem 'rails_best_practices', '~> 1.19', '>= 1.19.4'
