@@ -4,9 +4,7 @@ require 'rails_helper'
 
 RSpec.describe 'Frontend test', type: :system do
   before do
-    @user = create(:user)
-    @user.confirm
-    sign_in @user
+    sign_in_user
     visit frontend_test_path
   end
 

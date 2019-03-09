@@ -3,12 +3,6 @@ AllCops:
   Exclude:
     - 'db/schema.rb'
     - 'node_modules/**/*'
-Documentation:
-  Enabled: false
-Style/RegexpLiteral:
-  AllowInnerSlashes: true
-Layout/MultilineMethodCallIndentation:
-  EnforcedStyle: indented_relative_to_receiver
 Metrics/AbcSize:
   Exclude:
     - 'db/migrate/*'
@@ -17,6 +11,15 @@ Metrics/MethodLength:
     - 'db/migrate/*'
 Metrics/BlockLength:
   ExcludedMethods: ['describe', 'context']
+  Exclude:
+    - 'config/environments/*'
 Style/MixinUsage:
   Exclude:
     - 'db/seeds.rb'
+    - 'bin/*'
+Documentation:
+  Enabled: false
+Style/RegexpLiteral:
+  AllowInnerSlashes: true
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented_relative_to_receiver
