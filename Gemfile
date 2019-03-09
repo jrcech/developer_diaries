@@ -38,6 +38,8 @@ group :development do
   gem 'magic_frozen_string_literal', '~> 1.0', '>= 1.0.3'
   gem 'pry-awesome_print', '~> 9.6', '>= 9.6.11'
   gem 'pry-rails', '~> 0.3.9'
+  gem 'rails_best_practices', '~> 1.19', '>= 1.19.4'
+  gem 'reek', '~> 5.3', '>= 5.3.1'
   gem 'rubocop', '~> 0.65.0', require: false
   gem 'rubocop-rspec', '~> 1.32', require: false
   gem 'seedbank', '~> 0.5.0'
