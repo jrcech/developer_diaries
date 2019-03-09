@@ -32,6 +32,7 @@ end
 group :development do
   gem 'annotate', '~> 2.7', '>= 2.7.4'
   gem 'brakeman', '~> 4.4'
+  gem 'bundler-audit', '~> 0.6.1'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'magic_frozen_string_literal', '~> 1.0', '>= 1.0.3'
   gem 'pry-awesome_print', '~> 9.6', '>= 9.6.11'
