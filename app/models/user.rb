@@ -23,6 +23,7 @@
 #  updated_at             :datetime         not null
 #
 class User < ApplicationRecord
+  rolify
   devise :database_authenticatable,
          :registerable,
          :recoverable,
@@ -30,4 +31,10 @@ class User < ApplicationRecord
          :validatable,
          :trackable,
          :confirmable
+
+  after_create :assign_default_role
+
+  def assign_default_role
+    add_role(:user) if roles.blank?
+  end
 end

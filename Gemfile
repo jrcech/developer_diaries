@@ -18,6 +18,7 @@ gem 'webpacker', '~> 4.0', '>= 4.0.2'
 
 gem 'devise', '~> 4.6', '>= 4.6.1'
 gem 'mailgun-ruby', '~> 1.1', '>= 1.1.11'
+gem 'rolify', '~> 5.2'
 gem 'slim-rails', '~> 3.2'
 
 group :development, :test do
@@ -30,6 +31,7 @@ end
 
 group :development do
   gem 'annotate', '~> 2.7', '>= 2.7.4'
+  gem 'brakeman', '~> 4.4'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'magic_frozen_string_literal', '~> 1.0', '>= 1.0.3'
   gem 'pry-awesome_print', '~> 9.6', '>= 9.6.11'
