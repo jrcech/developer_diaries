@@ -1,12 +1,3 @@
-CommitMsg:
-  CapitalizedSubject:
-    enabled: false
-  EmptyMessage:
-    enabled: false
-  TrailingPeriod:
-    enabled: true
-  TextWidth:
-    enabled: false
 PreCommit:
   ALL:
     on_warn: fail
