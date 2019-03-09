@@ -13,7 +13,7 @@ development:
 test:
   <<: *default
   database: developer_diaries_test
-  host: <%= ENV['DB_HOST'].present? ? ENV['DB_HOST'] : 'localhost' %>
+  host: localhost
   username: <%= ENV['DB_USERNAME'] %>
   password: <%= ENV['DB_PASSWORD'] %>
 
