@@ -6,7 +6,7 @@
     "jquery": true
   },
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "warn"
   },
   "parser": "babel-eslint",
   "settings": {

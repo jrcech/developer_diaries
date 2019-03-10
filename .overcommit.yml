@@ -1,3 +1,6 @@
+CommitMsg:
+  ALL:
+    on_warn: fail
 PreCommit:
   ALL:
     on_warn: fail
