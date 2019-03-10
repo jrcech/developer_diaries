@@ -12,7 +12,7 @@ PreCommit:
   BundleCheck:
     enabled: true
   RailsSchemaUpToDate:
-    enabled: true
+    enabled: false
   RuboCop:
     enabled: true
   Fasterer:
@@ -23,6 +23,14 @@ PreCommit:
     enabled: true
   RailsBestPractices:
     enabled: true
+  EsLint:
+    enabled: true
+    required_executable: './node_modules/.bin/eslint'
+    include: 'app/javascript/**/*.js'
+  Stylelint:
+    enabled: true
+    required_executable: './node_modules/.bin/stylelint'
+    include: 'app/javascript/stylesheets/**/*.scss'
 PrePush:
   Brakeman:
     enabled: true
