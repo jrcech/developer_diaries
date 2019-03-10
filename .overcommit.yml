@@ -6,6 +6,8 @@ PreCommit:
     on_warn: fail
   YamlSyntax:
     enabled: true
+  JsonSyntax:
+    enabled: true
   BundleCheck:
     enabled: true
   RailsSchemaUpToDate:
@@ -28,6 +30,8 @@ PreCommit:
     enabled: true
     required_executable: './node_modules/.bin/stylelint'
     include: 'app/javascript/stylesheets/**/*.scss'
+  SlimLint:
+    enabled: true
 PrePush:
   Brakeman:
     enabled: true

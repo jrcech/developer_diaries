@@ -1,4 +1,5 @@
--# frozen_string_literal: true
+/ frozen_string_literal: true
+
 h1 Frontend tests
 div data-controller="frontend-test"
   p data-target="frontend-test.stimulusTest"
@@ -10,4 +11,10 @@ span Font Awesome:
 i.fas.fa-check
 br
 p.d-none Bootstrap CSS not loaded if this text is visible
-button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Fully loaded" Bootstrap?
+button[
+  type="button"
+  class="btn btn-secondary"
+  data-toggle="tooltip"
+  data-placement="top"
+  title="Fully loaded"
+] Bootstrap?

@@ -44,6 +44,7 @@ group :development do
   gem 'rubocop', '~> 0.65.0', require: false
   gem 'rubocop-rspec', '~> 1.32', require: false
   gem 'seedbank', '~> 0.5.0'
+  gem 'slim_lint', '~> 0.16.1'
   gem 'web-console', '>= 3.3.0'
 end
 
