@@ -43,6 +43,7 @@ group :development do
   gem 'reek', '~> 5.3', '>= 5.3.1'
   gem 'rubocop', '~> 0.65.0', require: false
   gem 'rubocop-rspec', '~> 1.32', require: false
+  gem 'rubycritic', '~> 4.0', require: false
   gem 'seedbank', '~> 0.5.0'
   gem 'slim_lint', '~> 0.16.1'
   gem 'web-console', '>= 3.3.0'
@@ -54,4 +55,5 @@ group :test do
   gem 'selenium-webdriver', '~> 3.141'
   gem 'shoulda-matchers', '~> 4.0', '>= 4.0.1'
   gem 'simplecov', '~> 0.16.1', require: false
+  gem 'w3c_validators', '~> 1.3', '>= 1.3.4'
 end
