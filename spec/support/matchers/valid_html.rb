@@ -14,6 +14,4 @@ RSpec::Matchers.define :have_valid_html do
   failure_message_when_negated do
     'Expected not to be valid html but it was'
   end
-
-  supports_block_expectations
 end

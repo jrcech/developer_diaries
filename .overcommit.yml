@@ -32,6 +32,8 @@ PreCommit:
     include: 'app/javascript/stylesheets/**/*.scss'
   SlimLint:
     enabled: true
+  Flay:
+    enabled: true
 PrePush:
   Brakeman:
     enabled: true

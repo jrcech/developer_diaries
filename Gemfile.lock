@@ -378,6 +378,7 @@ DEPENDENCIES
   dotenv-rails (~> 2.7, >= 2.7.1)
   factory_bot_rails (~> 5.0, >= 5.0.1)
   fasterer (~> 0.4.2)
+  flay (~> 2.12)
   geckodriver-helper (~> 0.23.0)
   jbuilder (~> 2.8)
   listen (>= 3.0.5, < 3.2)

@@ -34,6 +34,7 @@ group :development do
   gem 'brakeman', '~> 4.4'
   gem 'bundler-audit', '~> 0.6.1'
   gem 'fasterer', '~> 0.4.2'
+  gem 'flay', '~> 2.12'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'magic_frozen_string_literal', '~> 1.0', '>= 1.0.3'
   gem 'overcommit', '~> 0.46.0'
