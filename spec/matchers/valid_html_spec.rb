@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe 'spec/support/matchers/valid_html' do
+RSpec.describe 'spec/support/matchers/valid_html', vcr: true do
   it 'can evaluate valid html' do
     page = '<!DOCTYPE html><html lang="en"><head><title>V</title></head></html>'
     expect do
@@ -10,7 +10,7 @@ RSpec.describe 'spec/support/matchers/valid_html' do
     end.to fail_including('Expected not to be valid html but it was')
   end
 
-  it 'can evaluate invalid html' do
+  it 'can evaluate invalid html', vcr: true do
     page = '<!DOCTYPE html><html lang="en"><head></head></html>'
     expect do
       expect(page).to have_valid_html

@@ -41,12 +41,12 @@ RSpec.describe 'Frontend test', type: :system do
     end
   end
 
-  describe 'html validation' do
+  describe 'html validation', vcr: true do
     it 'is valid html' do
       expect(page).to have_valid_html
     end
 
-    it 'is valid html with javascript loaded', js: true do
+    it 'is valid html with javascript loaded', js: true, vcr: true do
       expect(page).to have_valid_html
     end
   end

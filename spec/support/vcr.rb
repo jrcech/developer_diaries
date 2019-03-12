@@ -1,11 +1,8 @@
 # frozen_string_literal: true
 
-VCR.config do |config|
+VCR.configure do |config|
   config.cassette_library_dir = 'spec/cassettes'
-  config.stub_with :fakeweb
-  config.default_cassette_options = { record: :new_episodes }
-end
-
-RSpec.configure do |config|
-  config.extend VCR::RSpec::Macros
+  config.hook_into :webmock
+  config.ignore_localhost = true
+  config.configure_rspec_metadata!
 end

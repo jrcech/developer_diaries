@@ -63,4 +63,5 @@ group :test do
   gem 'simplecov', '~> 0.16.1', require: false
   gem 'vcr', '~> 4.0'
   gem 'w3c_validators', '~> 1.3', '>= 1.3.4'
+  gem 'webmock', '~> 3.5', '>= 3.5.1'
 end
