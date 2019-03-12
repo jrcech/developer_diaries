@@ -23,6 +23,7 @@ gem 'slim-rails', '~> 3.2'
 
 group :development, :test do
   gem 'awesome_print', '~> 1.8'
+  gem 'bullet', '~> 5.9'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'dotenv-rails', '~> 2.7', '>= 2.7.1'
   gem 'factory_bot_rails', '~> 5.0', '>= 5.0.1'
