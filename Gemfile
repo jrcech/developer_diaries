@@ -57,5 +57,6 @@ group :test do
   gem 'selenium-webdriver', '~> 3.141'
   gem 'shoulda-matchers', '~> 4.0', '>= 4.0.1'
   gem 'simplecov', '~> 0.16.1', require: false
+  gem 'vcr', '~> 4.0'
   gem 'w3c_validators', '~> 1.3', '>= 1.3.4'
 end
