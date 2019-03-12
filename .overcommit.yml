@@ -22,6 +22,8 @@ PreCommit:
     enabled: true
   RailsBestPractices:
     enabled: true
+    command: ['rails_best_practices', 'app', '--spec']
+    flags: ['-c', '.rails_best_practices.yml']
   EsLint:
     enabled: true
     required_executable: './node_modules/.bin/eslint'
