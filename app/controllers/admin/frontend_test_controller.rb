@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Admin
-  class DashboardController < AdminController
+  class FrontendTestController < AdminController
     def index; end
   end
 end

@@ -5,7 +5,7 @@ require 'rails_helper'
 RSpec.describe 'Frontend test', type: :system do
   before do
     sign_in_user
-    visit frontend_test_path
+    visit admin_frontend_test_path
   end
 
   describe 'javascript components' do
