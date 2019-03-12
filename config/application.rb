@@ -22,6 +22,9 @@ module DeveloperDiaries
       generator.test_framework :rspec
       generator.stylesheets false
       generator.javascripts false
+      generator.view_specs false
+      generator.controller_specs false
+      generator.routing_specs false
       generator.helper false
       generator.channel assets: false
     end
