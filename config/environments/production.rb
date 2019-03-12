@@ -9,8 +9,15 @@ Rails.application.configure do
   config.active_storage.service = :local
   config.log_level = :debug
   config.log_tags = [:request_id]
+
   config.action_mailer.perform_caching = false
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.delivery_method = :mailgun
+  config.action_mailer.mailgun_settings = {
+    api_key: ENV['MAILGUN_API'],
+    domain: ENV['MAILGUN_DOMAIN']
+  }
+
   config.i18n.fallbacks = true
   config.active_support.deprecation = :notify
   config.log_formatter = ::Logger::Formatter.new
