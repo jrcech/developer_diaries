@@ -10,6 +10,7 @@ html lang="en"
     = stylesheet_pack_tag 'application'
     = javascript_pack_tag 'application'
   body
-    p.notice = notice
-    p.alert = alert
+    == render 'application/navigation'
+    p class="notice" = notice
+    p class="alert" = alert
     == yield
