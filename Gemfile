@@ -18,6 +18,10 @@ gem 'webpacker', '~> 4.0', '>= 4.0.2'
 
 gem 'devise', '~> 4.6', '>= 4.6.1'
 gem 'mailgun-ruby', '~> 1.1', '>= 1.1.11'
+gem 'omniauth', '~> 1.9'
+gem 'omniauth-facebook', '~> 5.0'
+gem 'omniauth-google-oauth2', '~> 0.6.1'
+
 gem 'rolify', '~> 5.2'
 gem 'slim-rails', '~> 3.2'
 
