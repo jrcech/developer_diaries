@@ -2,23 +2,15 @@
 
 module Users
   class OmniauthCallbacksController < Devise::OmniauthCallbacksController
-    def facebook
+    def all
       auth_data = request.env['omniauth.auth']
       @user = User.from_omniauth(auth_data)
 
       process_request(auth_data)
     end
 
-    def google
-      auth_data = request.env['omniauth.auth']
-      @user = User.from_omniauth(auth_data)
-
-      process_request(auth_data)
-    end
-
-    def failure
-      redirect_to root_path
-    end
+    alias facebook all
+    alias google all
 
     private
 
