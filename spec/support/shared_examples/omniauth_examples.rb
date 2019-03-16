@@ -42,7 +42,7 @@ RSpec.shared_examples 'OmniAuth examples' do |service|
       end
 
       it 'redirects to sign up' do
-        expect(page).to have_text 'Sign up'
+        expect(page).to have_text 'Sign Up'
       end
 
       it 'stores auth data to session' do
