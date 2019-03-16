@@ -1,6 +1,9 @@
 detectors:
   IrresponsibleModule:
     enabled: false
+  UtilityFunction:
+    exclude:
+      - "ApplicationController#default_url_options"
 directories:
   "app/controllers":
     IrresponsibleModule:
