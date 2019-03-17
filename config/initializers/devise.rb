@@ -14,6 +14,11 @@ Devise.setup do |config|
   config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
   config.reset_password_within = 6.hours
   config.sign_out_via = :delete
+  config.lock_strategy = :failed_attempts
+  config.unlock_keys = [:email]
+  config.unlock_strategy = :email
+  config.maximum_attempts = 10
+  config.last_attempt_warning = true
   config.omniauth :facebook,
                   ENV['FACEBOOK_APP_ID'],
                   ENV['FACEBOOK_APP_SECRET']

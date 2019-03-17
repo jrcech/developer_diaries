@@ -66,7 +66,7 @@ en:
         leave_blank_if_you_don_t_want_to_change_it: "Leave blank if you don't want to change it"
         we_need_your_current_password_to_confirm_your_changes: "We need your current password to confirm your changes"
         update: "Update"
-        unhappy: "Unhappy"
+        unhappy: "Unhappy?"
         cancel_my_account: "Cancel my account"
         are_you_sure: "Are you sury?"
         back: "Back"
@@ -97,10 +97,10 @@ en:
       links:
         log_in: "Log In"
         sign_up: "Sign Up"
-        forgot_your_password: "Forgot your password?"
-        didn_t_receive_confirmation_instructions: "Didn't receive confirmation instructions?"
-        didn_t_receive_unlock_instructions: "Didn't receive unlock instructions?"
-        sign_in_with_provider: "Sign in with %{provider}"
+        forgot_password: "Forgot your password?"
+        confirmation_instructions: "Didn't receive confirmation instructions?"
+        unlock_instructions: "Didn't receive unlock instructions?"
+        sign_with_provider: "Sign in with %{provider}"
   errors:
     messages:
       already_confirmed: "was already confirmed, please try signing in"

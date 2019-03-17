@@ -27,11 +27,17 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
       table.datetime :confirmation_sent_at
       table.string   :unconfirmed_email
 
+      ## Lockable
+      table.integer  :failed_attempts, default: 0, null: false
+      table.string   :unlock_token
+      table.datetime :locked_at
+
       table.timestamps null: false
     end
 
     add_index :users, :email,                unique: true
     add_index :users, :reset_password_token, unique: true
     add_index :users, :confirmation_token,   unique: true
+    add_index :users, :unlock_token,         unique: true
   end
 end

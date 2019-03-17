@@ -35,6 +35,7 @@ class User < ApplicationRecord
          :validatable,
          :trackable,
          :confirmable,
+         :lockable,
          :omniauthable,
          omniauth_providers: %i[facebook google]
 
