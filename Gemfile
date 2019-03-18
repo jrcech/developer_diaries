@@ -46,6 +46,7 @@ group :development do
   gem 'letter_opener', '~> 1.7'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'magic_frozen_string_literal', '~> 1.0', '>= 1.0.3'
+  gem 'meta_request', '~> 0.6.0'
   gem 'overcommit', '~> 0.46.0'
   gem 'pry-awesome_print', '~> 9.6', '>= 9.6.11'
   gem 'pry-rails', '~> 0.3.9'
