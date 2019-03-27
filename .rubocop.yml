@@ -16,7 +16,12 @@ Metrics/MethodLength:
   Exclude:
     - 'db/migrate/*'
 Metrics/BlockLength:
-  ExcludedMethods: ['describe', 'context', 'shared_examples']
+  ExcludedMethods: [
+    'describe',
+    'context',
+    'shared_examples',
+    'namespace'
+  ]
   Exclude:
     - 'config/environments/*'
 Style/MixinUsage:
