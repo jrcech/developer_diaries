@@ -9,9 +9,14 @@ set :puma_threads, [4, 16]
 set :puma_workers, 0
 
 # Rbenv
+root = fetch(:rbenv_path)
+path = "RBENV_ROOT=#{root} "
+version = "RBENV_VERSION=#{fetch(:rbenv_ruby)} "
+bin = "#{path}/bin/rbenv"
+
 set :rbenv_type, :user
 set :rbenv_ruby, File.read('.ruby-version').strip
-set :rbenv_prefix, rbenv_prefix
+set :rbenv_prefix, "#{root} #{version} #{bin} exec"
 set :rbenv_map_bins, %w[rake gem bundle ruby rails]
 set :rbenv_roles, :all
 
@@ -78,13 +83,4 @@ namespace :deploy do
   after  :finishing, :compile_assets
   after  :finishing, :cleanup
   after  :finishing, :restart
-end
-
-def rbenv_prefix
-  root = fetch(:rbenv_path)
-  path = "RBENV_ROOT=#{root} "
-  version = "RBENV_VERSION=#{fetch(:rbenv_ruby)} "
-  bin = "#{path}/bin/rbenv"
-
-  "#{root} #{version} #{bin} exec"
 end
