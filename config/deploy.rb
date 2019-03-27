@@ -80,8 +80,6 @@ namespace :deploy do
   after  :finishing, :restart
 end
 
-private
-
 def rbenv_prefix
   root = fetch(:rbenv_path)
   path = "RBENV_ROOT=#{root} "
