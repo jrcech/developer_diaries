@@ -61,7 +61,7 @@ namespace :deploy do
     on roles(:app) do
       current_branch = fetch(:branch)
 
-      unless `git rev-parse HEAD` == "git rev-parse origin/#{current_branch}"
+      unless `git rev-parse HEAD` == `git rev-parse origin/#{current_branch}`
         puts "WARNING: HEAD is not the same as origin/#{current_branch}"
         puts 'Run `git push` to sync changes.'
         exit
