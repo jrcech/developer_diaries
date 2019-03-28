@@ -19,9 +19,12 @@ set :rbenv_map_bins, %w[rake gem bundle ruby rails]
 set :rbenv_roles, :all
 
 # NVM
-set :nvm_type, :user # or :system, depends on your nvm setup
+set :nvm_type, :user
 set :nvm_node, 'v10.15.3'
 set :nvm_map_bins, %w[node npm yarn]
+
+# env
+append :linked_files, '.env'
 
 # Don't change these unless you know what you're doing
 set :pty, true

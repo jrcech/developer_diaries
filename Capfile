@@ -9,6 +9,7 @@ require 'capistrano/puma'
 require 'capistrano/scm/git'
 require 'capistrano/nvm'
 require 'capistrano/yarn'
+require 'capistrano/dotenv/tasks'
 
 install_plugin Capistrano::SCM::Git
 install_plugin Capistrano::Puma
