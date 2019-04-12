@@ -28,6 +28,7 @@ set :nodenv_map_bins, %w[node npm yarn]
 set :nodenv_roles, :all
 
 set :linked_files, %w[config/master.key]
+set :linked_dirs, %w[tmp/pids tmp/sockets log]
 
 # env
 append :linked_files, '.env'
