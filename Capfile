@@ -7,8 +7,8 @@ require 'capistrano/bundler'
 require 'capistrano/rbenv'
 require 'capistrano/puma'
 require 'capistrano/scm/git'
-require 'capistrano/nodenv'
 require 'capistrano/yarn'
+require 'capistrano/nodenv'
 require 'capistrano/dotenv/tasks'
 
 install_plugin Capistrano::SCM::Git
