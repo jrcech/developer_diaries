@@ -18,6 +18,8 @@ set :rbenv_prefix, "RBENV_ROOT=#{rbenv_path} " \
 set :rbenv_map_bins, %w[rake gem bundle ruby rails]
 set :rbenv_roles, :all
 
+set :yarn_target_path, "#{fetch(:nodenv_path)}/bin"
+
 # Nodenv
 set :nodenv_type, :user
 set :nodenv_node, '10.15.3'
