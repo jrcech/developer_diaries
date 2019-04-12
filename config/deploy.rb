@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 server '46.101.110.210', port: '26398', roles: %i[web app db], primary: true
+default_run_options[:shell] = '/bin/zsh'
 
 set :repo_url, 'git@github.com:CechTech/developer_diaries.git'
 set :application, 'developer_diaries'
@@ -17,8 +18,6 @@ set :rbenv_prefix, "RBENV_ROOT=#{rbenv_path} " \
                    "#{rbenv_path}/bin/rbenv exec"
 set :rbenv_map_bins, %w[rake gem bundle ruby rails]
 set :rbenv_roles, :all
-
-set :yarn_target_path, "#{fetch(:nodenv_path)}/bin"
 
 # Nodenv
 set :nodenv_type, :user
