@@ -18,10 +18,13 @@ set :rbenv_prefix, "RBENV_ROOT=#{rbenv_path} " \
 set :rbenv_map_bins, %w[rake gem bundle ruby rails]
 set :rbenv_roles, :all
 
-# NVM
-set :nvm_type, :user
-set :nvm_node, 'v10.15.3'
-set :nvm_map_bins, %w[node npm yarn]
+# Nodenv
+set :nodenv_type, :user
+set :nodenv_node, '10.15.3'
+set :nodenv_prefix, "NODENV_ROOT=#{fetch(:nodenv_path)} " \
+                    "NODENV_VERSION=#{fetch(:nodenv_node)} " \
+                    "#{fetch(:nodenv_path)}/bin/nodenv exec"
+set :nodenv_map_bins, %w[node npm yarn]
 
 # env
 append :linked_files, '.env'
