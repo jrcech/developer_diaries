@@ -25,6 +25,7 @@ set :nodenv_prefix, "NODENV_ROOT=#{fetch(:nodenv_path)} " \
                     "NODENV_VERSION=#{fetch(:nodenv_node)} " \
                     "#{fetch(:nodenv_path)}/bin/nodenv exec"
 set :nodenv_map_bins, %w[node npm yarn]
+set :nodenv_roles, :all
 
 # env
 append :linked_files, '.env'
