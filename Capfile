@@ -8,6 +8,7 @@ require 'capistrano/puma'
 require 'capistrano/scm/git'
 require 'capistrano/yarn'
 require 'capistrano/nodenv'
+require 'capistrano/nvm'
 require 'capistrano/dotenv/tasks'
 require 'rollbar/capistrano3'
 
