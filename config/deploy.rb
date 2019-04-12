@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 server '46.101.110.210', port: '26398', roles: %i[web app db], primary: true
-default_run_options[:shell] = '/bin/zsh'
 
 set :repo_url, 'git@github.com:CechTech/developer_diaries.git'
 set :application, 'developer_diaries'
 set :user, 'jiricech'
+set :default_shell, '/bin/zsh -l'
 set :puma_threads, [4, 16]
 set :puma_workers, 0
 
