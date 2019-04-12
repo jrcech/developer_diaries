@@ -15,7 +15,7 @@ set :rbenv_ruby, File.read('.ruby-version').strip
 set :rbenv_prefix, "RBENV_ROOT=#{rbenv_path} " \
                    "RBENV_VERSION=#{fetch(:rbenv_ruby)} " \
                    "#{rbenv_path}/bin/rbenv exec"
-set :rbenv_map_bins, %w[rake gem bundle ruby rails]
+set :rbenv_map_bins, %w[rake gem bundle ruby rails puma pumactl]
 set :rbenv_roles, :all
 
 # Nodenv
