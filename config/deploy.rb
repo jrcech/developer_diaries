@@ -34,7 +34,7 @@ set :linked_dirs, %w[tmp/pids tmp/sockets log]
 append :linked_files, '.env'
 
 # Rollbar
-set :rollbar_token, ENV['POST_SERVER_ITEM_ACCESS_TOKEN']
+set :rollbar_token, '8722b03246844dfb92645a84c84bd061'
 set :rollbar_env, (proc { fetch :stage })
 set :rollbar_role, (proc { :app })
 
