@@ -15,7 +15,7 @@ set :rbenv_ruby, File.read('.ruby-version').strip
 set :rbenv_prefix, "RBENV_ROOT=#{rbenv_path} " \
                    "RBENV_VERSION=#{fetch(:rbenv_ruby)} " \
                    "#{rbenv_path}/bin/rbenv exec"
-set :rbenv_map_bins, %w[rake gem bundle ruby rails]
+set :rbenv_map_bins, %w[rake gem bundle ruby rails yarn]
 set :rbenv_roles, :all
 
 # Nodenv
@@ -24,7 +24,7 @@ set :nodenv_node, '10.15.3'
 set :nodenv_prefix, "NODENV_ROOT=#{fetch(:nodenv_path)} " \
                     "NODENV_VERSION=#{fetch(:nodenv_node)} " \
                     "#{fetch(:nodenv_path)}/bin/nodenv exec"
-set :nodenv_map_bins, %w[node npm yarn]
+set :nodenv_map_bins, %w[node npm]
 set :nodenv_roles, :all
 
 # env
