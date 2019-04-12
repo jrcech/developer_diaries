@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "#{Rails.root}/lib/html_validator"
+
 RSpec::Matchers.define :have_valid_html do
   validator = HtmlValidator::Validator.new
 
