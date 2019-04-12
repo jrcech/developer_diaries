@@ -33,6 +33,11 @@ set :linked_dirs, %w[tmp/pids tmp/sockets log]
 # env
 append :linked_files, '.env'
 
+# Rollbar
+set :rollbar_token, ENV['POST_SERVER_ITEM_ACCESS_TOKEN']
+set :rollbar_env, (proc { fetch :stage })
+set :rollbar_role, (proc { :app })
+
 # Don't change these unless you know what you're doing
 set :pty, true
 set :use_sudo, false

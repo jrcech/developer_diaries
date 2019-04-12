@@ -10,6 +10,7 @@ require 'capistrano/scm/git'
 require 'capistrano/yarn'
 require 'capistrano/nodenv'
 require 'capistrano/dotenv/tasks'
+require 'rollbar/capistrano3'
 
 install_plugin Capistrano::SCM::Git
 install_plugin Capistrano::Puma
