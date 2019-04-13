@@ -8,30 +8,6 @@ set :user, 'jiricech'
 set :puma_threads, [4, 16]
 set :puma_workers, 0
 
-# Rbenv
-rbenv_path = fetch(:rbenv_path)
-set :rbenv_type, :user
-set :rbenv_ruby, File.read('.ruby-version').strip
-set :rbenv_prefix, "RBENV_ROOT=#{rbenv_path} " \
-                   "RBENV_VERSION=#{fetch(:rbenv_ruby)} " \
-                   "#{rbenv_path}/bin/rbenv exec"
-set :rbenv_map_bins, %w[rake gem bundle ruby rails puma pumactl]
-set :rbenv_roles, :all
-
-# NVM
-set :nvm_type, :user
-set :nvm_node, 'v10.15.3'
-set :nvm_map_bins, %w[node npm yarn]
-
-# Nodenv
-# set :nodenv_type, :user
-# set :nodenv_node, '10.15.3'
-# set :nodenv_prefix, "NODENV_ROOT=#{fetch(:nodenv_path)} " \
-#                     "NODENV_VERSION=#{fetch(:nodenv_node)} " \
-#                     "#{fetch(:nodenv_path)}/bin/nodenv exec"
-# set :nodenv_map_bins, %w[node npm yarn]
-# set :nodenv_roles, :all
-
 set :linked_files, %w[config/master.key]
 set :linked_dirs, %w[tmp/pids tmp/sockets log]
 

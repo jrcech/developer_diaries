@@ -28,5 +28,11 @@ module DeveloperDiaries
       generator.helper false
       generator.channel assets: false
     end
+
+    config.filter_parameters << :password
+
+    Raven.configure do |config|
+      config.dsn = 'https://10446b329cc14cd580041645bd11994c:eeaeab17481c47f1889b28ffde66ae4a@sentry.io/1438323'
+    end
   end
 end

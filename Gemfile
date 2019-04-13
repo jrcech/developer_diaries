@@ -23,6 +23,7 @@ gem 'omniauth-facebook', '~> 5.0'
 gem 'omniauth-google-oauth2', '~> 0.6.1'
 gem 'rolify', '~> 5.2'
 gem 'rollbar', '~> 2.19', '>= 2.19.3'
+gem 'sentry-raven', '~> 2.9'
 gem 'slim-rails', '~> 3.2'
 
 group :development, :test do
@@ -40,9 +41,7 @@ group :development do
   gem 'capistrano', '~> 3.11', require: false
   gem 'capistrano-bundler', '~> 1.5', require: false
   gem 'capistrano-dotenv-tasks', '~> 0.1.5', require: false
-  gem 'capistrano-nvm', '~> 0.0.7', require: false
   gem 'capistrano-rails', '~> 1.4', require: false
-  gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4', require: false
   gem 'capistrano-yarn', '~> 2.0', '>= 2.0.2', require: false
   gem 'capistrano3-puma', '~> 3.1', '>= 3.1.1', require: false
 end
