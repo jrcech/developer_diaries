@@ -2,6 +2,8 @@
 
 server '46.101.110.210', port: '26398', roles: %i[web app db], primary: true
 
+Rake::Task['deploy:assets:backup_manifest'].clear_actions
+
 set :repo_url, 'git@github.com:CechTech/developer_diaries.git'
 set :application, 'developer_diaries'
 set :user, 'jiricech'
