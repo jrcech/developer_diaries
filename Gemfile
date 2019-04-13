@@ -42,6 +42,7 @@ group :development do
   gem 'capistrano-bundler', '~> 1.5', require: false
   gem 'capistrano-dotenv-tasks', '~> 0.1.5', require: false
   gem 'capistrano-rails', '~> 1.4', require: false
+  gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4', require: false
   gem 'capistrano-yarn', '~> 2.0', '>= 2.0.2', require: false
   gem 'capistrano3-puma', '~> 3.1', '>= 3.1.1', require: false
 end
