@@ -24,10 +24,10 @@ set :linked_dirs, %w[tmp/pids tmp/sockets log]
 # env
 append :linked_files, '.env'
 
-# Rollbar
-set :rollbar_token, '8722b03246844dfb92645a84c84bd061'
-set :rollbar_env, (proc { fetch :stage })
-set :rollbar_role, (proc { :app })
+# # Rollbar
+# set :rollbar_token, '8722b03246844dfb92645a84c84bd061'
+# set :rollbar_env, (proc { fetch :stage })
+# set :rollbar_role, (proc { :app })
 
 # Don't change these unless you know what you're doing
 set :pty, true

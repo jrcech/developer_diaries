@@ -22,7 +22,6 @@ gem 'omniauth', '~> 1.9'
 gem 'omniauth-facebook', '~> 5.0'
 gem 'omniauth-google-oauth2', '~> 0.6.1'
 gem 'rolify', '~> 5.2'
-gem 'rollbar', '~> 2.19', '>= 2.19.3'
 gem 'sentry-raven', '~> 2.9'
 gem 'slim-rails', '~> 3.2'
 
