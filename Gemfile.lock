@@ -329,8 +329,6 @@ GEM
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
     rolify (5.2.0)
-    rollbar (2.19.3)
-      multi_json
     rspec-core (3.8.0)
       rspec-support (~> 3.8.0)
     rspec-expectations (3.8.2)
@@ -504,7 +502,6 @@ DEPENDENCIES
   redis (~> 4.1)
   reek (~> 5.3, >= 5.3.1)
   rolify (~> 5.2)
-  rollbar (~> 2.19, >= 2.19.3)
   rspec-rails (~> 3.8, >= 3.8.2)
   rubocop (~> 0.65.0)
   rubocop-rspec (~> 1.32)
