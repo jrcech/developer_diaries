@@ -3,8 +3,8 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.1'
-gem 'rails', '~> 5.2', '>= 5.2.2'
+ruby '2.6.3'
+gem 'rails', '~> 5.2', '>= 5.2.3'
 
 # Default
 gem 'bootsnap', '>= 1.1.0', require: false
@@ -13,7 +13,7 @@ gem 'mini_magick', '~> 4.9', '>= 4.9.3'
 gem 'pg', '~> 1.1', '>= 1.1.4'
 gem 'puma', '~> 3.12'
 gem 'redis', '~> 4.1'
-gem 'webpacker', '~> 4.0', '>= 4.0.2'
+gem 'webpacker', '~> 4.0', '>= 4.0.7'
 
 # Added
 gem 'devise', '~> 4.6', '>= 4.6.1'

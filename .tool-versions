@@ -1,0 +1,5 @@
+ruby 2.6.3
+nodejs 10.16.0
+yarn 1.17.3
+postgres 11.4
+redis 5.0.5
