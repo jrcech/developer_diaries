@@ -16,7 +16,7 @@ gem 'redis', '~> 4.1'
 gem 'webpacker', '~> 4.0', '>= 4.0.2'
 
 # Added
-gem 'devise', '~> 4.6', '>= 4.6.1'
+gem 'devise', '~> 4.7'
 gem 'mailgun-ruby', '~> 1.1', '>= 1.1.11'
 gem 'omniauth', '~> 1.9'
 gem 'omniauth-facebook', '~> 5.0'
